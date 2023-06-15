@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imageviewgiohang"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/textviewtengiohang"
+            android:textColor="#10100f"
+            android:text="Ten mon hang" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/textviewgiamonhang"
+            android:textColor="#f20"
+            android:text="Ten mon hang" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonminus"
+                android:focusable="false"
+                android:text="-" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonvalues"
+                android:background="@null"
+                android:focusable="false"
+                android:text="1" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buttonplus"
+                android:focusable="false"
+                android:text="+" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
